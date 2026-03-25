@@ -129,7 +129,7 @@ Start here: [`docs/README.md`](./docs/README.md)
 Read more in the docs folder for step-by-step guides and advanced setup.
 
 Hosted docs:
-- https://tas.lythe.ai/docs
+- https://tas.lythe.ai/getting-started/installation
 
 npm package:
 - https://www.npmjs.com/package/telegram-agent-sdk
