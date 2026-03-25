@@ -17,7 +17,7 @@ You get:
 ## Installation
 
 ```bash
-npm install telegram-agent-sdk
+npm install telegram-agent-sdk dotenv
 ```
 
 Package:
