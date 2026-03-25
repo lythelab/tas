@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { createTelegramAgent, createMemory } = require("tas");
+const { createTelegramAgent, createMemory } = require("telegram-agent-sdk");
 
 const products = [
   { id: "P100", name: "Noise-Canceling Headphones", price: 149, stock: 11 },

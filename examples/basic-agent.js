@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { createTelegramAgent, createMemory } = require("tas");
+const { createTelegramAgent, createMemory } = require("telegram-agent-sdk");
 
 const agent = createTelegramAgent({
   token: process.env.TELEGRAM_BOT_TOKEN,

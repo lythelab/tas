@@ -1,5 +1,11 @@
 # Documentation Index
 
+Hosted docs:
+- https://tas.lythe.ai/docs
+
+npm package:
+- https://www.npmjs.com/package/telegram-agent-sdk
+
 - [Quickstart](./quickstart.md)
 - [Provider Configuration](./providers.md)
 - [Model Suggestions](./models.md)

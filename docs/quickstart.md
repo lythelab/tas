@@ -3,8 +3,12 @@
 ## 1. Install
 
 ```bash
-npm install tas
+npm install telegram-agent-sdk
 ```
+
+Links:
+- Docs: https://tas.lythe.ai/docs
+- npm: https://www.npmjs.com/package/telegram-agent-sdk
 
 ## 2. Set environment variables
 
@@ -21,7 +25,7 @@ export QWEN_API_KEY=...
 ## 3. Run a minimal agent
 
 ```ts
-import { createMemory, createTelegramAgent } from "tas";
+import { createMemory, createTelegramAgent } from "telegram-agent-sdk";
 
 const memory = createMemory({
   provider: "memory",

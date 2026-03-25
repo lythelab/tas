@@ -1,10 +1,10 @@
-# TAS (Telegram Agent SDK)
+# telegram-agent-sdk
 
 Build Telegram AI agents fast with one SDK: webhook runtime, LLM routing, tool calling, memory layers, and dev observability.
 
-## What Is TAS?
+## What Is It?
 
-`tas` is a Node.js SDK that helps you ship Telegram agents with minimal setup.
+`telegram-agent-sdk` is a Node.js SDK that helps you ship Telegram agents with minimal setup.
 
 You get:
 - Telegram webhook runtime
@@ -17,15 +17,18 @@ You get:
 ## Installation
 
 ```bash
-npm install tas
+npm install telegram-agent-sdk
 ```
+
+Package:
+- https://www.npmjs.com/package/telegram-agent-sdk
 
 ## 5-Minute Quick Start
 
 ```js
 // index.js
 require("dotenv").config();
-const { createTelegramAgent, createMemory } = require("tas");
+const { createTelegramAgent, createMemory } = require("telegram-agent-sdk");
 
 const agent = createTelegramAgent({
   token: process.env.TELEGRAM_BOT_TOKEN,
@@ -73,7 +76,7 @@ Optional memory backends:
 ## Model Suggestions (IntelliSense Friendly)
 
 ```js
-const { getSuggestedModels } = require("tas");
+const { getSuggestedModels } = require("telegram-agent-sdk");
 
 console.log(getSuggestedModels("openai"));
 console.log(getSuggestedModels("anthropic"));
@@ -84,7 +87,7 @@ In JS, use JSDoc types to get provider-specific model autocomplete:
 
 ```js
 // @ts-check
-/** @type {import("tas").QwenLLMConfig} */
+/** @type {import("telegram-agent-sdk").QwenLLMConfig} */
 const llm = {
   provider: "qwen",
   model: "qwen-plus"
@@ -96,7 +99,7 @@ const llm = {
 Attach memory to agent:
 
 ```js
-const { createMemory } = require("tas");
+const { createMemory } = require("telegram-agent-sdk");
 
 const memory = createMemory({
   postgresql: {
@@ -124,6 +127,12 @@ See runnable JS examples in [`examples/`](./examples):
 
 Start here: [`docs/README.md`](./docs/README.md)
 Read more in the docs folder for step-by-step guides and advanced setup.
+
+Hosted docs:
+- https://tas.lythe.ai/docs
+
+npm package:
+- https://www.npmjs.com/package/telegram-agent-sdk
 
 Detailed guides:
 - [Quickstart](./docs/quickstart.md)

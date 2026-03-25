@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { createTelegramAgent, createMemory } = require("tas");
+const { createTelegramAgent, createMemory } = require("telegram-agent-sdk");
 
 const faq = {
   refund: "Refunds are supported within 7 days of purchase for eligible plans.",

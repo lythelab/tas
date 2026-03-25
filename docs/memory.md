@@ -10,7 +10,7 @@ All persistent providers now store memory in a parent-chat + child-messages shap
 ## Basic pattern
 
 ```ts
-import { createMemory, createTelegramAgent } from "tas";
+import { createMemory, createTelegramAgent } from "telegram-agent-sdk";
 
 const memory = createMemory({
   postgresql: {
