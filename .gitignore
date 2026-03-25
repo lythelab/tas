@@ -30,3 +30,4 @@ sdk-test/
 # Runtime artifacts
 *.pid
 *.seed
+tas-0.1.0.tgz
