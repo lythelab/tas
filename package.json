@@ -1,0 +1,46 @@
+{
+  "name": "tas",
+  "version": "0.1.0",
+  "description": "SDK to build AI-powered Telegram agents with OpenAI, Anthropic, and Qwen",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "if (Test-Path dist) { Remove-Item -Recurse -Force dist }",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "telegram",
+    "agent",
+    "sdk",
+    "llm",
+    "openai",
+    "anthropic",
+    "qwen"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@types/pg": "^8.11.11",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  },
+  "dependencies": {
+    "mongodb": "^6.16.0",
+    "pg": "^8.14.1",
+    "redis": "^5.0.1",
+    "toondb": "^1.0.0"
+  }
+}
